@@ -47,14 +47,14 @@ create_process <- function(steps,
     if (sipoc_template) {
         if (steps < 2) stop("SIPOC needs at least one L2 process steps - only ", steps - 1, " requested")
         if (steps > 10) warning("SIPOC is best for high-level processes: ", steps, " is too many!")
-        df$L1[1] <- "Process Title"
+        df$L1[1] <- "Execute Sample Process"
         df$Supplier[1] <- "Supplier of process input"
         df$Input[1] <- "Process input"
         df$Output[1] <- "Process output"
         df$Customer[1] <- "Customer of process output"
         inc <- 2:steps
         label <- inc - 1
-        df$L2[inc] <- paste("Step", label)
+        df$L2[inc] <- paste("Do step", label)
         df$Supplier[inc] <- paste("Supplier of input", label)
         df$Input[inc] <- paste("Input for step", label)
         df$Output[inc] <- paste("Output from step", label)

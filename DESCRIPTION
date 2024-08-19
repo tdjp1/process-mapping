@@ -1,6 +1,6 @@
 Package: ProcessMapping
 Title: Creates process diagrams using a structured process description
-Version: 1.4.0
+Version: 1.4.1
 Authors@R: c(
     person(given = "Tim",
            family = "Perkins",
